@@ -100,6 +100,24 @@ To help you reproduce the Face-Human-Bench Benchmark, we provide the following g
         ├── wider_attribute_test.json
         └── wider_attribute_trainval.json
 ```
+
+    CALFW: http://whdeng.cn/CALFW/
+    CelebA: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+    CPLFW: http://www.whdeng.cn/cplfw/
+    FF+: https://github.com/ondyari/FaceForensics
+    LFW: https://vis-www.cs.umass.edu/lfw/
+    MLFW: http://www.whdeng.cn/MLFW/
+    RAF-DB: http://www.whdeng.cn/RAF/model1.html
+    SiW-Mv2: https://cvlab.cse.msu.edu/siw-mv2-dataset.html
+    SLLFW: http://www.whdeng.cn/SLLFW/
+    UTKFace: https://susanqq.github.io/UTKFace/
+    HICO-DET: https://www.v7labs.com/open-datasets/hico-det
+    Market1501: https://zheng-lab.cecs.anu.edu.au/Project/project_reid.html
+    PISC: https://zenodo.org/records/1059155
+    ShTech: https://github.com/desenzhou/ShanghaiTechDataset
+    SpatialSense: https://github.com/princeton-vl/SpatialSense
+    WIDERAttribute: https://mmlab.ie.cuhk.edu.hk/projects/WIDERAttribute.html
+
    
 2. Use the [`prepare_data.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/prepare_data.py) script to extract test samples from the original images based on the JSON files we provide. Note: You will need to modify the paths in the script to match your local environment. 
 
