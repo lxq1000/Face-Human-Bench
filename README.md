@@ -1,7 +1,7 @@
 # Face-Human-Bench: A Comprehensive Face and Human Understanding Benchmark for Large Visual Language Models
 
 <p align="center">
-    <img src="https://github.com/lxq1000/Face-Human-Bench/blob/main/pictures/logo.png" width="30%"> <br>
+    <img src="pictures/logo.png" width="30%"> <br>
 </p>
 
 
@@ -9,12 +9,13 @@
 
 Faces and humans are crucial elements in social interaction and are widely included in everyday photos and videos. Therefore, a deep understanding of faces and humans will enable multi-modal assistants to achieve improved response quality and broadened application scope. Currently, the multi-modal assistant community lacks a comprehensive and scientific evaluation of face and human understanding abilities. In this paper, we first propose a hierarchical ability taxonomy that includes three levels of abilities. Then, based on this taxonomy, we collect images and annotations from publicly available datasets in the face and human community and build a semi-automatic data pipeline to produce problems for the new benchmark. Finally, the obtained Face-Human-Bench includes a development set and a test set, each with 1800 problems, supporting both English and Chinese. We conduct evaluations over 25 mainstream multi-modal large language models (MLLMs) with our Face-Human-Bench, focusing on the correlation between abilities, the impact of the relative position of targets on performance, and the impact of Chain of Thought (CoT) prompting on performance. We also explore which abilities of MLLMs need to be supplemented by specialist models. The data and evaluation code of the Face-Human-Bench will be made publicly available.
 
- <img src="https://github.com/lxq1000/Face-Human-Bench/blob/main/pictures/face_human_bench.png" alt="Image" width="800">
+ <img src="pictures/face_human_bench.png" alt="Image" width="800">
 
 
 
 ## Data Acquisition
-We comply with all agreements of the original public datasets used and do not involve further copying, publishing, or distributing any portion of the images from these datasets. We will only open-source the [JSON files](https://github.com/lxq1000/Face-Human-Bench/blob/main/data) containing our test and development sets.
+We comply with all agreements of the original public datasets used and do not involve further copying, publishing, or distributing any portion of the images from these datasets. We will only open-source the [JSON files](data) containing our test and development sets.
+We also provide [Hugging Face](https://huggingface.co/datasets/InQ2025/Face-Human-Bench) data download links.
 
 To help you reproduce the Face-Human-Bench Benchmark, we provide the following guidelines:
 
@@ -119,12 +120,12 @@ To help you reproduce the Face-Human-Bench Benchmark, we provide the following g
     WIDERAttribute: https://mmlab.ie.cuhk.edu.hk/projects/WIDERAttribute.html
 
    
-2. Use the [`prepare_data.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/prepare_data.py) script to extract test samples from the original images based on the JSON files we provide. Note: You will need to modify the paths in the script to match your local environment. 
+2. Use the [`prepare_data.py`](code/prepare_data.py) script to extract test samples from the original images based on the JSON files we provide. Note: You will need to modify the paths in the script to match your local environment. 
 
 
 ## Evaluation
 
-To evaluate on our benchmark, execute the following scripts in order: [`eval.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/eval.py), [`output_final_answer.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/output_final_answer.py), and [`score.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/score.py). Each script serves a distinct purpose:
+To evaluate on our benchmark, execute the following scripts in order: [`eval.py`](code/evaluation/eval.py), [`output_final_answer.py`](code/evaluation/output_final_answer.py), and [`score.py`](code/evaluation/score.py). Each script serves a distinct purpose:
 
 - `eval.py`: Obtains the output from the MLLM.
 - `output_final_answer.py`: Extracts the final answer from the MLLM's output.
