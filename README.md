@@ -122,3 +122,15 @@ To help you reproduce the Face-Human-Bench Benchmark, we provide the following g
 2. Use the [`prepare_data.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/prepare_data.py) script to extract test samples from the original images based on the JSON files we provide. Note: You will need to modify the paths in the script to match your local environment. 
 
 
+## Evaluation
+
+To evaluate on our benchmark, execute the following scripts in order: [`eval.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/eval.py), [`output_final_answer.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/output_final_answer.py), and [`score.py`](https://github.com/lxq1000/Face-Human-Bench/blob/main/code/evaluation/score.py). Each script serves a distinct purpose:
+
+- `eval.py`: Obtains the output from the MLLM.
+- `output_final_answer.py`: Extracts the final answer from the MLLM's output.
+- `score.py`: Calculates the scores for the Face-Human-Bench based on the final answers.
+
+These scripts are provided as an example with GPT-4o to test. Before running them, update the file paths and API settings as indicated by the "TODO" comments in the code to match your local setup and the API you intend to test.
+
+
+
