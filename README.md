@@ -1,4 +1,4 @@
-# Face-Human-Bench: A Comprehensive Face and Human Understanding Benchmark for Large Visual Language Models
+# [NeurIPS 2025] Face-Human-Bench: A Comprehensive Face and Human Understanding Benchmark for Large Visual Language Models
 
 <p align="center">
     <img src="pictures/logo.png" width="30%"> <br>
