@@ -141,4 +141,13 @@ To evaluate on our benchmark, execute the following scripts in order: [`eval.py`
 These scripts are provided as an example with GPT-4o to test. Before running them, update the file paths and API settings as indicated by the "TODO" comments in the code to match your local setup and the API you intend to test.
 
 
+```latex
+@article{qin2025face,
+  title={Face-Human-Bench: A Comprehensive Benchmark of Face and Human Understanding for Multi-modal Assistants},
+  author={Qin, Lixiong and Ou, Shilong and Zhang, Miaoxuan and Wei, Jiangning and Zhang, Yuhang and Song, Xiaoshuai and Liu, Yuchen and Wang, Mei and Xu, Weiran},
+  journal={arXiv preprint arXiv:2501.01243},
+  year={2025}
+}
+```
+
 
