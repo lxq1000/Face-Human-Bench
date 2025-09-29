@@ -17,6 +17,7 @@
 ## Data Acquisition
 We comply with all agreements of the original public datasets used and do not involve further copying, publishing, or distributing any portion of the images from these datasets. We will only open-source the [JSON files](data) containing our test and development sets.
 We also provide [Hugging Face](https://huggingface.co/datasets/InQ2025/Face-Human-Bench) data download links.
+It is recommended to use the [JSON files](data) provided in the GitHub repository. In this way, you can directly use the scripts we provided for testing. For the version available on [Hugging Face](https://huggingface.co/datasets/InQ2025/Face-Human-Bench), some fields have been adjusted to ensure compatibility with the dataset viewer.
 
 To help you reproduce the Face-Human-Bench Benchmark, we provide the following guidelines:
 
