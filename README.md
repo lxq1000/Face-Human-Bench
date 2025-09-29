@@ -1,5 +1,4 @@
-# [NeurIPS 2025] Face-Human-Bench: A Comprehensive Benchmark of Face and Human Understanding for Multi-modal Assistants
-
+# [NeurIPS 2025] Face-Human-Bench: A Comprehensive Benchmark of Face and Human Understanding for Multi-modal Assistants（Document）
 
 
  <img src="pictures/face_human_bench.png" alt="Image" width="800">
