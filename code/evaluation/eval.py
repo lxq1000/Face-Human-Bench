@@ -114,7 +114,7 @@ def test_single_sample(sample_info, eval_data_root_path, subset_info, language):
             text += " "
             text += str(sample_info["QA"]["options"][(i+round_k)%k])
             text += "\n"
-        text += "Please select the correct answer from the options above."
+        text += "Please provide the answer to the multiple-choice question, using only the option’s letter to indicate your choice. Note: Only one option is correct. For questions you are unsure about, please choose the answer you think is most likely."
     else:
 
         text = "问题: " + sample_info["QA"]["question"] + "\n"
@@ -124,7 +124,7 @@ def test_single_sample(sample_info, eval_data_root_path, subset_info, language):
             text += " "
             text += str(sample_info["QA"]["options"][(i+round_k)%k])
             text += "\n"
-        text += "请从以上选项中选择正确的答案。"
+        text += "请填写多项选择题的答案，仅使用选项对应的字母表示您的选择。注意：只有一个选项正确。对于您不确定的问题，请选择您认为最有可能的答案。"
 
     answer_op = ["A", "B", "C", "D"]
     answer = answer_op[(sample_info["QA"]["answer"]-round_k)%k]
